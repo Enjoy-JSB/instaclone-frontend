@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 const Header = styled.header`
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 40px;
 `;
