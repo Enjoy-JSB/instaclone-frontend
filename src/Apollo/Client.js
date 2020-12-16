@@ -7,7 +7,10 @@ export default new ApolloClient({
     resolvers,
   },
   cache: new InMemoryCache(),
-  uri: "http://localhost:4000",
+  uri:
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:4000"
+      : "https://instaclone-backend-js.herokuapp.com/",
   headers: {
     Authorization: `Bearer ${localStorage.getItem("token")}`,
   },
